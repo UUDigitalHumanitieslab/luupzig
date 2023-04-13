@@ -1,0 +1,30 @@
+@import '../style';
+
+:host {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  vertical-align: bottom;
+  padding: 10px;
+}
+
+.token {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  .part {
+    display: flex;
+
+    .segment {
+      line-height: 30px;
+
+      .text {
+        // prevents cropping the text when applying a background
+        position: relative;
+      }
+    }
+  }
+}

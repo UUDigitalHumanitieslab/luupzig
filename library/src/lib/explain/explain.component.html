@@ -1,0 +1,3 @@
+(<ng-container *ngFor="let token of tokens"><span class="part" *ngFor="let part of token.parts"
+    [ngClass]="{'is-highlight': part.highlight}"><span class="segment" *ngFor="let segment of part.segments"
+    [ngClass]="{'is-small-caps': segment.smallCaps}">{{segment.text}}</span></span></ng-container>)

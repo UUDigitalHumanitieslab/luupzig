@@ -1,0 +1,21 @@
+.part {
+  &.is-highlight .segment {
+    background-color: #FFE08A;
+  }
+
+  .segment {
+    &.is-small-caps {
+      font-variant: all-small-caps;
+      font-size: 1.2em;
+    }
+  }
+}
+
+.segment:hover,
+.segment.is-hovered {
+  background-color: #ebfffc;
+
+  .part.is-highlight & {
+    background-color: #F5F0C3;
+  }
+}

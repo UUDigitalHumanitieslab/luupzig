@@ -1,0 +1,13 @@
+<div class="cell" *ngFor="let token of tokens; let tokenIndex = index" [ngClass]="{'is-italic': type === 'example'}"
+  (mouseout)="emitHover(-1,-1)">
+  <div class="token">
+    <span *ngFor="let part of token.parts" class="part" [ngClass]="{'is-highlight': part.highlight}">
+      <ng-container *ngFor="let segment of part.segments">
+        <span *ngIf="!segment.whitespace" class="segment" [ngClass]="{
+          'is-small-caps': segment.smallCaps,
+          'is-hovered': hoveredSegment !== -1 && tokenIndex === hoveredToken && segment.index === hoveredSegment
+        }" (mouseover)="emitHover(tokenIndex, segment.index)"><span class="text">{{segment.text}}</span></span>
+      </ng-container>
+    </span>
+  </div>
+</div>
