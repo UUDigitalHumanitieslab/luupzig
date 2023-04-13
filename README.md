@@ -2,7 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
 
+This project consists of:
+
+* `library/`: Angular library with a gloss view
+* `frontend/`: frontend showing its features and useful for development of library
+* `elements/`: export of library using [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
+* `elements-demo.html`: demo showing how to import this library using Web Components
+
 ## Development server
+
+Run `yarn build library` first.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
@@ -12,7 +21,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `yarn build:elements` for building the Web Components.
+
+Run `yarn build luupzig` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 

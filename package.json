@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:elements": "yarn build luupzig && ng build --project elements --output-hashing none && yarn pack:elements && cp elements/package.json dist/elements",
+    "pack:elements": "cat ./dist/elements/*.js > dist/elements/elements.js && ls -lah dist/elements/elements.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -14,6 +16,7 @@
     "@angular/common": "^15.2.7",
     "@angular/compiler": "^15.2.7",
     "@angular/core": "^15.2.7",
+    "@angular/elements": "^15.2.7",
     "@angular/forms": "^15.2.7",
     "@angular/platform-browser": "^15.2.7",
     "@angular/platform-browser-dynamic": "^15.2.7",
