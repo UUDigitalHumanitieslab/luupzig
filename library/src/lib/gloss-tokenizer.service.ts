@@ -33,7 +33,7 @@ export class GlossTokenizerService {
       highlight,
       segments: []
     }];
-    const separators = /[ \*\.\-_=:;~\>\<\[\]\(\)\\]/g;
+    const separators = /[\s\*\.\-_=:;~\>\<\[\]\(\)\\]/g;
     let match: RegExpExecArray | null;
     let index = 0;
     let segment = 0;
@@ -62,6 +62,7 @@ export class GlossTokenizerService {
           break;
 
         case ' ':
+        case '\t':
           // rule 2A: a hyphen and a single space may be used together in the object language
           if (index + 1 < value.length && value[index + 1] !== '-') {
             // preserve whitespace
@@ -82,6 +83,9 @@ export class GlossTokenizerService {
               highlight,
               segments: []
             }];
+            // start from 0 for each token, this way a misaligned token
+            // won't ruin everything
+            segment = 0;
             index++;
           }
           break;

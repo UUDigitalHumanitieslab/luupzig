@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "yarn build library && ng serve frontend",
     "build": "ng build",
-    "build:elements": "yarn build luupzig && ng build --project elements --output-hashing none && yarn pack:elements && cp elements/package.json dist/elements",
+    "build:elements": "yarn build library && ng build --project elements --output-hashing none && yarn pack:elements && cp elements/package.json dist/elements",
     "pack:elements": "cat ./dist/elements/*.js > dist/elements/elements.js && ls -lah dist/elements/elements.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

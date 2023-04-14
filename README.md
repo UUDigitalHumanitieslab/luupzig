@@ -13,7 +13,7 @@ This project consists of:
 
 Run `yarn build library` first.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `yarn start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -21,9 +21,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `yarn build:elements` for building the Web Components.
+Run `yarn build:elements` for building the Web Components. Note the `:`!
 
-Run `yarn build luupzig` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `yarn build library` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 

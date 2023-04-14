@@ -7,7 +7,11 @@
 .cell {
   display: table-cell;
   vertical-align: bottom;
-  padding: 10px;
+  padding: 5px 10px;
+
+  &:first-child {
+    padding-left: 0;
+  }
 }
 
 .token {
