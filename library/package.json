@@ -1,6 +1,8 @@
 {
   "name": "luupzig",
   "version": "0.0.1",
+  "author": "Utrecht University, Centre for Digital Humanities",
+  "license": "BSD-3-Clause",
   "peerDependencies": {
     "@angular/common": "^15.2.7",
     "@angular/core": "^15.2.7",

@@ -1,6 +1,8 @@
 {
   "name": "luupzig",
   "version": "0.0.0",
+  "author": "Utrecht University, Centre for Digital Humanities",
+  "license": "BSD-3-Clause",
   "scripts": {
     "ng": "ng",
     "start": "yarn build library && ng serve frontend",
