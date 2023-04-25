@@ -226,6 +226,7 @@
               "zone.js/testing"
             ],
             "tsConfig": "elements/tsconfig.spec.json",
+            "karmaConfig": "elements/karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": [
               "elements/src/favicon.ico",
