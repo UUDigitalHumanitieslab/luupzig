@@ -1,7 +1,10 @@
 # Luupzig
 
+[![DOI](https://zenodo.org/badge/627391873.svg)](https://zenodo.org/doi/10.5281/zenodo.10374572)
 [![Actions Status](https://github.com/UUDigitalHumanitieslab/luupzig/workflows/Unit%20tests/badge.svg)](https://github.com/UUDigitalHumanitieslab/luupzig/actions)
 [![npm version](https://badge.fury.io/js/luupzig.svg)](https://badge.fury.io/js/luupzig)
+
+Library for showing for Leipzig annotated glosses.
 
 This project consists of:
 
