@@ -2,6 +2,20 @@
   <div class="container">
     <h1 class="title">
       Luupzig
+      <button class="button" (click)="toggleDark()">
+        @if (darkMode$ | async) {
+          <span class="icon">
+            🌜
+          </span>
+          <span>Dark</span>
+        }
+        @else {
+          <span class="icon">
+            ☀️
+          </span>
+          <span>Light</span>
+        }
+      </button>
     </h1>
     <div class="card">
       <div class="card-content">

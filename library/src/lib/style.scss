@@ -1,6 +1,15 @@
+$highlight: var(--bulma-warning);
+$highlight-hover: var(--bulma-warning-bold);
+$highlight-hover-invert: var(--bulma-warning-soft);
+$highlight-invert: var(--bulma-warning-invert);
+
+$segment: var(--bulma-primary-soft);
+$segment-hover: var(--bulma-primary-bold);
+
 .part {
   &.is-highlight .segment {
-    background-color: #FFE08A;
+    background-color: $highlight;
+    color: $highlight-invert;
   }
 
   .segment {
@@ -13,9 +22,11 @@
 
 .segment:hover,
 .segment.is-hovered {
-  background-color: #ebfffc;
+  background-color: $segment;
+  color: $segment-hover;
 
   .part.is-highlight & {
-    background-color: #F5F0C3;
+    background-color: $highlight-hover;
+    color: $highlight-hover-invert;
   }
 }
