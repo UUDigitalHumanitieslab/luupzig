@@ -1,12 +1,12 @@
 {
   "name": "luupzig",
-  "version": "0.0.1",
+  "version": "17.0.0",
   "author": "Utrecht University, Centre for Digital Humanities",
   "license": "BSD-3-Clause",
   "peerDependencies": {
-    "@angular/common": "^15.2.7",
-    "@angular/core": "^15.2.7",
-    "bulma": "^0.9.4"
+    "@angular/common": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "bulma": "^1.0.0"
   },
   "dependencies": {
     "tslib": "^2.1.0"
