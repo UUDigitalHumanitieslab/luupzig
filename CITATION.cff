@@ -16,7 +16,7 @@ authors:
 identifiers:
   - type: doi
     value: 10.5281/zenodo.10374572
-repository-code: 'https://github.com/UUDigitalHumanitieslab/luupzig'
+repository-code: 'https://github.com/CentreForDigitalHumanities/luupzig'
 keywords:
   - glosses
   - leipzig
